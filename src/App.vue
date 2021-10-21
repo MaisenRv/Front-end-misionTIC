@@ -85,10 +85,13 @@ components: {
 
 <style>
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -97,11 +100,12 @@ body{
   justify-content: center;
   align-items: center;
   font-family: 'Times New Roman', Times, serif;
+  position: relative;
 }
 
 .header{
   width: 400px;
-  height: 200px;
+  height: 150px;
   flex-direction: column;
   /* background: #0FF6D7; */
   /* box-shadow: 3px 3px 7px rgba(0,0,0,.5); */
@@ -144,5 +148,11 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 140px;
+  background: black;
+  position: absolute;
+  bottom: -250px;
+  left: 0;
 } 
 </style>

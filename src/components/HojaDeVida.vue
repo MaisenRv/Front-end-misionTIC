@@ -71,5 +71,26 @@ export default {
 </script>
 
 <style >
+.information{
+    border: 2px solid white;
+    background: #1A98EA;
+    border-radius: 10px;
+}
+
+.information h1, .information h2{
+    color:white;
+    margin: 20px;
+    text-transform: uppercase;
+}
+.information h1{
+    border-bottom: white 1px solid; 
+}
+
+
+
+.information span{
+    font-weight: bold;
+    text-transform: capitalize;
+}
 
 </style>

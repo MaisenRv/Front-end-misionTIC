@@ -1,7 +1,7 @@
 <template>
   <div class="signUp_user">
     <div class="container_signUp_user">
-      <h2>Registrarse</h2>
+      <h2>Postularse</h2>
 
       <form v-on:submit.prevent="processSignUp">
         <input type="text" v-model="user.username" placeholder="Username" /><br />
@@ -11,7 +11,7 @@
         <input type="text" v-model="user.HojaDeVida.cedula" placeholder="Cedula" /><br />
         <input type="text" v-model="user.HojaDeVida.Agnos_experiencia" placeholder="experience years"/><br />
         <input type="text" v-model="user.HojaDeVida.profesion" placeholder="Ocupation" /><br />
-        <input type="text" v-model="user.HojaDeVida.descripcion" placeholder="Description" /><br />
+        <textarea type="text" v-model="user.HojaDeVida.descripcion" placeholder="Description" /><br />
 
         <button type="submit">Registrarse</button>
       </form>
@@ -81,5 +81,17 @@ export default {
   font-size: 34px;
   padding: 10px;
   color:white;
+}
+
+textarea{
+  border-radius: 5px;
+  margin: 10px;
+  max-width: 180px;
+  min-width: 180px;
+  min-height: 60px;
+  max-height: 200px;
+  outline: none;
+  border: none;
+  padding: 5px;
 }
 </style>
