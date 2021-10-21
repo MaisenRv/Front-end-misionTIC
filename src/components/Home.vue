@@ -1,7 +1,7 @@
 <template>
 
     <div class="greetings">
-        <h1>¡Bienvenido  <span> {{username}} </span>!</h1>
+        <h1> Inicio de sesión exitoso</h1>
     </div>
 
 </template>
@@ -22,11 +22,11 @@ export default {
 
 <style>
     .greetings{
-        margin: 0;
+        margin: 30px 0px;
         padding: 0%;
         height: 100%;
         width: 100%;
-    
+        
         display: flex;
         justify-content: center;
         align-items: center;

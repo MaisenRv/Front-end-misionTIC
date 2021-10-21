@@ -1,7 +1,8 @@
 <template>
+
   <div id="app" class="app">
     <div class="header">
-    <h1>Banco UN</h1>
+    <h1>Hojas de vida</h1>
     <nav>
       <button v-if="is_auth" v-on:click="loadHome"> Inicio </button>
       <button v-if="is_auth" v-on:click="loadHojaDeVida"> Hoja de vida </button>
@@ -17,10 +18,9 @@
       v-on:logOut="logOut">
     </router-view>
   </div>
-
-  <div class="footer">
-            <h2>Misión TIC 2022</h2>
-  </div>
+    <footer>
+      <img src="./assets/mision.png" alt="">
+    </footer>
   </div>
 </template>
 
@@ -85,6 +85,64 @@ components: {
 
 <style>
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body{
+  background-color: #0DB8D4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+}
 
+.header{
+  width: 400px;
+  height: 200px;
+  flex-direction: column;
+  /* background: #0FF6D7; */
+  /* box-shadow: 3px 3px 7px rgba(0,0,0,.5); */
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px auto;
+}
+.header h1{
+  color: white;
+  font-size: 40px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin: 30px;
+  
+}
+
+button{
+  transition: all 1s ease;
+
+  margin: 15px;
+  border: none;
+  padding: 10px;
+  color: #1A98EA;
+  background-color: white;
+  border-radius: 10px;
+}
+
+button:hover{
+  box-shadow: 3px 3px 7px rgba(0,0,0,.5);
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+img{
+  width: 140px;
+  height: 80px;
+  margin-top: 30px;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
 </style>

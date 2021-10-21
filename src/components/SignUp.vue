@@ -64,5 +64,22 @@ export default {
 </script>
 
 <style>
+.signUp_user{
+  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  margin-top: 60px;
+  color: white;
+  border-radius: 10px;
+  background: #1A98EA;
+}
 
+.container_signUp_user h2{
+  font-size: 34px;
+  padding: 10px;
+  color:white;
+}
 </style>
