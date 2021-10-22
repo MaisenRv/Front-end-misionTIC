@@ -1,7 +1,7 @@
 <template>
 
     <div class="greetings">
-        <h1> Inicio de sesión exitoso</h1>
+        <h1> <span>{{username}}</span> ¡Bienvenido a Tu hoja de vida!</h1>
     </div>
 
 </template>
