@@ -6,13 +6,14 @@ import SignUp from './components/SignUp.vue'
 import Home from './components/Home.vue'
 import HojaDeVida from './components/HojaDeVida.vue'
 
-const routes = [{
-  path: '/',
-  name: 'root',
-  component: App
-},
+const routes = [
+//   {
+//   path: '/',
+//   name: 'root',
+//   component: App
+// },
 {
-  path: '/user/logIn',
+  path: '/',
   name: "logIn",
   component: LogIn
 },
